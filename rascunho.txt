@@ -1,0 +1,27 @@
+No grupo de trabalho, desenvolver uma aplicação que permita experimentar operações de amostragem e
+quantização.
+
+Assim, seu sistema deve permitir, a partir de um arquivo ".pgm":
+- reduzir a imagem (3 opções)
+    - remover linhas e colunas impares (odds)
+    - remover as células impares (odds)
+    - remover linhas e colunas impares e depois as células com valores pares
+
+- definir e aplicar uma matriz (3 opções) para estabelecer um valor padrão de amplitude
+    - adicionar 10 ao valor de cada célula (traço mais grosso)
+    - diminuir 10 do valor de cada célula (traço mais fino)
+    - inverter o valor de cada célula (preto vira branco e etc.)
+
+Importante:
+- os dois efeitos podem ser aplicados quantas vezes o usuário desejar e na ordem que ele determinar
+- para cada efeito, deve ser possível visualizar o histograma da escala de cinza da imagem.
+
+Como gerar um arquivo pgm usando ImageMagick ( https://imagemagick.org/ ):
+- "magick convert imagem.jpg -colorspace gray -compress none -depth 8 imagem.pgm"
+
+Como gerar um arquivo jpg usando ImageMagick:
+- "magick convert imagem.pgm imagem.jpg"
+
+O que deve ser entregue:
+- código
+- relatório com experimentos de uma imagem escolhida pelo grupo

@@ -53,7 +53,7 @@ class FrameOptions(tk.Frame):
                 _matrix = _matrix.option5()
             elif(option == "6"):
                 _matrix = _matrix.option6()
-
         self.controller.new_matrix = _matrix
 
+        self.controller.frames["FrameResults"].canvas_update()
         self.controller.show_frame("FrameResults")

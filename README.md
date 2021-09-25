@@ -1,1 +1,1 @@
-# py-ImgEditor
+# Simple Image Editor
